@@ -37,15 +37,14 @@ JOBS = [
         'id': 6,
         'title': 'Data Engineer',
         'location': 'Amman, Jordan',
-        'salary': 'JOD 1000',
     },
 ]
 
 
 @app.route("/")
 def hello_jovian():
-  return render_template("home.html", jobs=JOBS, company_name="Jovian")
+    return render_template("home.html", jobs=JOBS, company_name="Jovian")
 
 
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True)
